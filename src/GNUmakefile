@@ -171,9 +171,9 @@ ifndef SAFE_MODE
     BASELDFLAGS += -Wl,-z,norelro
   endif
 
-  ifneq (,$(findstring gcc,$(notdir $(CC))))
-    BASECFLAGS += -flto
-  endif
+#  ifneq (,$(findstring gcc,$(notdir $(CC))))
+#    BASECFLAGS += -flto
+#  endif
 
 endif
 
